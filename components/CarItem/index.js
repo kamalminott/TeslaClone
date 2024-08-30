@@ -4,7 +4,7 @@ import React from 'react'
 import styles from './styles'
 
 const CarItem = (props) => {
-  const { name, tagline, taglineCTA, image} = props;
+  const { name, tagline, taglineCTA, image} = props.car;
   return (
     <View style={styles.carContainer}>
       <ImageBackground
@@ -34,7 +34,7 @@ const CarItem = (props) => {
         type='secondary' 
         content={"Existing Inventory"} 
         onPress={() => {
-          console.warn("Exsisting Inventory was pressed")
+          console.warn("Existing Inventory was pressed")
         }}
         />
         </View>
